@@ -628,6 +628,7 @@
         .seccion h2 {
             grid-area: titulo;
             text-align: center;
+            padding-top: 1rem 0rem;
         }
 
         .seccion h3 {
@@ -663,8 +664,6 @@
             "contenedor-art";
         }
 
-
-
         .seccion-hombre {
             padding: 0.2rem;
             width: 100%;
@@ -692,6 +691,7 @@
         .seccion-niños {
             padding: 0.2rem;
             width: 100%;
+            margin: 0rem;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 5% 55% 40%;
@@ -758,22 +758,27 @@
 
         .caja-cambios {
             grid-area: caja-cambios;
+            margin: 0rem;
         }
 
         .caja-seguinos {
             grid-area: caja-seguinos;
+            margin: 0rem;
         }
 
         .caja-ubicacion {
             grid-area: caja-ubicacion;
+            margin: 0rem;
         }
 
         .caja-nosotros {
             grid-area: caja-nosotros;
+            margin: 0rem;
         }
 
         .caja-dudas {
             grid-area: caja-dudas;
+            margin: 0rem;
         }
 
         footer {
@@ -781,7 +786,7 @@
             grid-area: footer;
         }
         .caja-footer {
-            width: 100%;
+            width: 100vw;
             display: grid;
             grid-template-columns: repeat(5, 1fr);
             grid-template-rows: 20% 80%;
@@ -805,6 +810,7 @@
             width: 100%;
             height: 100%;
         }
+        
 
     }
 
