@@ -93,11 +93,12 @@
         color: var(--secundario);
         background-color: var(--blanco);
         border: solid 0.3rem;
+        transform: scale(1.15);
+        transition-duration: 2000ms;
     }
 
     #boton-comprar:hover a {
         color: var(--secundario);
-        background-color: var(--blanco);
     }
 
         /* NAVEGACION SITIO */
