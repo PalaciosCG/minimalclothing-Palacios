@@ -6,108 +6,117 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&family=Montserrat:wght@600&family=Mukta:wght@300;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="./css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&family=Montserrat:wght@600&family=Mukta:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="./css/stylesBs.css">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="preload" href="./css/styles.css" as="style">
     <title>Minimal Clothing</title>
 </head>
-    <body id="selector-body">
-        <div class="encabezado">
+    <body class="container-fluid p-0 m-0 row">
+        <div class="container-fluid d-flex justify-content-center encabezado">
         <a name="top"></a>
         <h1>MINIMAL</h1>
         </div>
-        <header>
+        <header class="col-12 col-lg-12 p-0 sticky-top">
             <!-- Navegación del sitio -->
             <nav id="navegacion">
-                <div class="nav-sitio-bg">
-                    <ul class="nav-sitio">
-                        <li><a href="./pages/sale.html">SALE</a></li>
-                        <li><a href="./pages/hombre.html">MEN</a></li>
-                        <li><a href="./pages/mujer.html">WOMEN</a></li>
-                        <li><a href="./pages/niño.html">KIDS</a></li>
-                        <li><a href="./pages/talles.html">TALLES</a></li>
-                    </ul>
-                </div>
-                <!-- Panel de usuario -->
-                <div class="nav-user-bg">
-                    <ul class="nav-user">
-                        <li><a href="./pages/registro.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="9" cy="7" r="4" />
-                            <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                            <path d="M16 11h6m-3 -3v6" />
-                          </svg></a></li>
-                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="12" cy="7" r="4" />
-                            <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                          </svg></a></li>
-                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                          </svg></a></li>
-                        <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                            <circle cx="6" cy="19" r="2" />
-                            <circle cx="17" cy="19" r="2" />
-                            <path d="M17 17h-11v-14h-2" />
-                            <path d="M6 5l14 1l-1 7h-13" />
-                          </svg></a></li>
-                    </ul>
-                </div>
-                <hr>
+                <ul class="d-flex justify-content-center m-0 p-0 nav-sitio">
+                    <li><a href="./pages/sale.html">SALE</a></li>
+                    <li><a href="./pages/hombre.html">MEN</a></li>
+                    <li><a href="./pages/mujer.html">WOMEN</a></li>
+                    <li><a href="./pages/niño.html">KIDS</a></li>
+                    <li><a href="./pages/talles.html">TALLES</a></li>
+                </ul>
+            <!-- Panel de usuario -->
+                <ul class="d-flex justify-content-end align-items-center m-0 p-4 nav-user">
+                    <li><a href="./pages/registro.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="9" cy="7" r="4" />
+                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        <path d="M16 11h6m-3 -3v6" />
+                        </svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="12" cy="7" r="4" />
+                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                        </svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                        </svg></a></li>
+                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                        <circle cx="6" cy="19" r="2" />
+                        <circle cx="17" cy="19" r="2" />
+                        <path d="M17 17h-11v-14h-2" />
+                        <path d="M6 5l14 1l-1 7h-13" />
+                        </svg></a></li>
+                </ul>
             </nav>
         </header>
     <!-- Main del sitio -->
-        <main id="contenedor-main">
-            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-sale seccion">
-                <h2>APROVECHA EL SALE!</h2>
-                <article class="contenedor-art">
-                    <h3>Buzos - 30% OFF!</h3>
-                    <p class="texto-seccion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam libero ea, ratione quos expedita unde inventore aliquam similique? Pariatur?</p>
-                    <button id="boton-comprar"> <a href="./pages/sale.html">COMPRA AHORA!</a></button>
+        <main id="contenedor-main row m-0 p-0">
+            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-sale row seccion m-0 p-0">
+                <h2 class="col d-flex justify-content-center align-items-center">APROVECHA EL SALE!</h2>
+                <article class="contenedor-art col d-flex justify-content-center align-items-center m-0 p-0">
+                    <div class="box-descripcion row col-4">
+                        <h3 class="row">Buzos - 30% OFF!</h3>
+                        <p class="texto-seccion row m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam libero ea, ratione quos expedita unde inventore aliquam similique? Pariatur?</p>
+                        <button class="row" id="boton-comprar"> <a href="./pages/sale.html">COMPRA AHORA!</a></button>
+                    </div>
                 </article>
-                <img class="imagen-art" src="./img/sale.jpg" alt="">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img class="image-fluid" src="./img/sale.jpg" alt="">
+                </div>
             </section>
-            <section data-aos="fade-left" data-aos-duration="3000" class="seccion-hombre seccion">
-                <img clas="imagen-art" src="./img/saco.jpg" alt="">
-                <article class="contenedor-art">
-                    <h3>Sacos</h3>
-                    <p class="texto-seccion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente beatae labore aspernatur cum architecto dolore pariatur accusamus maiores id officia!</p>
-                    <button id="boton-comprar"> <a href="./pages/hombre.html">COMPRA AHORA!</a></button>
+            <section data-aos="fade-left" data-aos-duration="3000" class="seccion-hombre seccion row m-0 p-0">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img class="imagen-art image-fluid" src="./img/saco.jpg" alt="">
+                </div>
+                <article class="contenedor-art col d-flex justify-content-center align-items-center m-0 p-0">
+                    <div class="box-descripcion row col-4">
+                        <h3>Sacos</h3>
+                        <p class="texto-seccion row m-0 p-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente beatae labore aspernatur cum architecto dolore pariatur accusamus maiores id officia!</p>
+                        <button id="boton-comprar"> <a href="./pages/hombre.html">COMPRA AHORA!</a></button>
+                    </div>
                 </article>
-                <h2>AUTUNM MEN 2022</h2>
+                <h2 class="col d-flex justify-content-center align-items-center">AUTUNM MEN 2022</h2>
             </section>
-            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-mujer seccion">
-                <h2>AUTUNM WOMAN - 2022</h2>
-                <article class="contenedor-art">
-                    <h3>Vestidos</h3>
-                    <p class="texto-seccion">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dolorum nostrum laboriosam impedit similique cum, voluptatem necessitatibus consequatur minima labore!</p>
-                    <button id="boton-comprar"> <a href="./pages/mujer.html">COMPRA AHORA!</a></button>
+            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-mujer seccion row seccion m-0 p-0">
+                <h2 class="col d-flex justify-content-center align-items-center">AUTUNM WOMAN - 2022</h2>
+                <article class="contenedor-art contenedor-art col d-flex justify-content-center align-items-center m-0 p-0">
+                    <div class="box-descripcion row col-4">
+                        <h3>Vestidos</h3>
+                        <p class="texto-seccion row m-0 p-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dolorum nostrum laboriosam impedit similique cum, voluptatem necessitatibus consequatur minima labore!</p>
+                        <button id="boton-comprar"> <a href="./pages/mujer.html">COMPRA AHORA!</a></button>
+                    </div>
                 </article>
-                <img class="imagen-art" src="./img/vestido.jpg" alt="">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img class="imagen-art" src="./img/vestido.jpg" alt="">
+                </div>
             </section>
-            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-niños seccion">
-                <h2>KIDS - 2022</h2>
-                <article class="contenedor-art">
-                    <h3>Jeans</h3>
-                    <p class="texto-seccion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sunt tenetur quo architecto similique esse reprehenderit ratione vel officia. Sunt.</p>
-                    <button id="boton-comprar"> <a href="./pages/niños.html">COMPRA AHORA!</a></button>
+            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-niños seccion row seccion m-0 p-0">
+                <h2 class="col d-flex justify-content-center align-items-center">KIDS - 2022</h2>
+                <article class="contenedor-art contenedor-art col d-flex justify-content-center align-items-center m-0 p-0">
+                    <div class="box-descripcion row col-4">
+                        <h3>Jeans</h3>
+                        <p class="texto-seccion">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Repellendus sunt tenetur quo architecto similique esse reprehenderit ratione vel officia. Sunt.</p>
+                        <button id="boton-comprar"> <a href="./pages/niños.html">COMPRA AHORA!</a></button>
+                    </div>
                 </article>
-                <img src="./img/kids.jpg" alt="">
+                <div class="col d-flex justify-content-center align-items-center">
+                    <img class="imagen-art image-fluid" src="./img/kids.jpg" alt="">
+                </div>
             </section>
         </main>
         <!-- Footer -->
         <footer>
-            <div class="caja-home-bg">
-                <div class="caja-home">
-                    <h4 id="boton-home"><a href="#top" target="_top"">Inicio</a></h4>
-                </div>
-                <hr>
+            <div class="caja-home-bg row">
+                <h4 class="d-flex justify-content-center align-items-center m-0 p-1" id="boton-home"><a href="#top" target="_top"">Inicio</a></h4>
             </div>
-            <div class="caja-footer">
-                <div class="caja-seguinos">
+            <div class="caja-footer row d-flex justify-content-center">
+                <div class="caja-seguinos col-2 d-flex flex-column align-items-center">
                     <h4>Seguinos!</h4>
                     <a href="https://twitter.com" target="_blank">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
@@ -130,29 +139,30 @@
                     </svg>
                     </a>
                 </div>
-                <div class="caja-ubicacion">
+                <div class="caja-ubicacion col-2 d-flex flex-column align-items-center">
                     <h4>Donde estamos</h4>
                     <p>Calle falsa 123, Caba, Bs As.</p>
                     <div class="caja-iframe">
                         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383630.12888137!2d-116.53894872969755!3d34.08678054507306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872b08ebcb4c186b%3A0x423927b17fc1cd71!2sArizona%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1654541709359!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
-                <div class="caja-cambios">
+                <div class="caja-cambios col-2 d-flex flex-column">
                     <h4>Cambios y devoluciones</h4>
                     <p><a href="#">Cambios</a></p>
                     <p><a href="#">Devoluciones</a></p>
                     <p><a href="#">Políticas de devoluciones</a></p>
                 </div>
-                <div class="caja-nosotros">
+                <div class="caja-nosotros col-2 d-flex flex-column">
                     <h4>Nosotros</h4>
                     <p><a href="#">Acerca de Minimal Clothing</a></p>
                 </div>
-                <div class="caja-dudas">
+                <div class="caja-dudas col-2 d-flex flex-column">
                     <h4>Dudas o consultas?</h4>
                     <p> <a href="./pages/contacto.html">Contactanos</a></p>
                 </div>
             </div>
         </footer>
+    <script src="./js/bootstrap.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     </body>
