@@ -1,0 +1,49 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;  /* 1rem = 10px */
+}
+
+a:link, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: black;
+}
+
+h1 {
+    font-size: 5.5rem;
+}
+
+h2 {
+    font-size: 4.5rem;
+}
+
+h3 {
+    margin: 1rem 1rem;
+    padding: 1rem 0;
+    font-size: 3.5rem;
+    white-space: nowrap;
+}
+
+header {
+    ul {
+    list-style-type: none;
+    background-color: black;
+    justify-content: end;
+    }
+}
+
+.nav-sitio {
+    a {
+    padding: 0 3rem;
+    font-size: 4rem;
+    color: white;
+    border-radius: 0.5rem;
+    }
+}
+
+@import "botones";
+
+@import "navsitio";

@@ -1,0 +1,91 @@
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px; /* 1rem = 10px */
+}
+
+a:link, a:visited, a:hover, a:active {
+  text-decoration: none;
+  color: black;
+}
+
+h1 {
+  font-size: 5.5rem;
+}
+
+h2 {
+  font-size: 4.5rem;
+}
+
+h3 {
+  margin: 1rem 1rem;
+  padding: 1rem 0;
+  font-size: 3.5rem;
+  white-space: nowrap;
+}
+
+header ul {
+  list-style-type: none;
+  background-color: black;
+  justify-content: end;
+}
+
+.nav-sitio a {
+  padding: 0 3rem;
+  font-size: 4rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+
+#boton-comprar {
+  margin: 2rem 0;
+  font-family: "Montserrat";
+  font-size: 2rem;
+  letter-spacing: 0.5rem;
+  background-color: black;
+  border-radius: 0.5rem;
+  border: solid 0.3rem;
+}
+#boton-comprar a {
+  color: white;
+  font-size: 2.5rem;
+}
+#boton-comprar:hover {
+  color: black;
+  background-color: white;
+  border: solid 0.3rem;
+  transform: scale(1.15);
+  transition-duration: 2000ms;
+}
+#boton-comprar:hover a {
+  color: black;
+}
+
+.nav-sitio a {
+  padding: 0 3rem;
+  font-size: 4rem;
+  color: white;
+  border-radius: 0.5rem;
+}
+.nav-sitio li a:hover {
+  color: black;
+  transition-duration: 1s;
+}
+.nav-sitio li:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 1s;
+  border-radius: 0.5rem;
+}
+
+.nav-sitio li:hover {
+  background-color: white;
+  color: black;
+  transition-duration: 1s;
+  border-radius: 0.5rem;
+}
+
+/*# sourceMappingURL=styles-scss.css.map */

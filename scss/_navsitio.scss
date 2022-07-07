@@ -1,0 +1,29 @@
+.nav-sitio {
+    a {
+    padding: 0 3rem;
+    font-size: 4rem;
+    color: white;
+    border-radius: 0.5rem;
+    }
+    li {
+        a{
+            &:hover {
+                color: black;
+                transition-duration: 1s;
+            }
+        }
+        &:hover {
+            background-color: white;
+            color: black;
+            transition-duration: 1s;
+            border-radius: 0.5rem;
+        }
+    }
+}
+
+.nav-sitio li:hover {
+    background-color: white;
+    color: black;
+    transition-duration: 1s;
+    border-radius: 0.5rem;
+}
