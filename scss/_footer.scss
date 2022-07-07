@@ -1,0 +1,45 @@
+footer{
+    h4{ 
+        a {
+            color: white;
+            font-size: 2rem; 
+        }
+    }
+    .caja-footer{
+        h4 {
+            font-size: 2rem;
+        }
+        p {
+            font-size: 1.3rem;
+            margin-bottom: 2px;
+            padding: 0;
+        }
+    }
+}
+
+.caja-home-bg {
+    border-bottom: 5px solid black;
+    background-color: black ;
+}
+
+#boton-home a {
+    color: white;
+}
+
+.caja-footer {
+    background-color: #c6c6c6;
+}
+
+.caja-ubicacion p {
+    font-size: 1.5rem;
+}
+
+.caja-nosotros {
+    grid-area: caja-nosotros;
+    margin: 0rem;
+}
+
+.caja-dudas {
+    grid-area: caja-dudas;
+    margin: 0rem;
+}

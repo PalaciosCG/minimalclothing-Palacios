@@ -1,0 +1,30 @@
+.seccion{
+    &-sale {
+    border-bottom: 0.5rem solid black;
+    background-color: #c6c6c6;
+    margin: 0;
+    padding: 0;
+    height: 60rem;
+    }
+    &-hombre{
+        border-bottom: 0.5rem solid black;
+        background-color: #BE8C63;
+        margin: 0;
+        padding: 0;
+        height: 60rem;  
+    }
+    &-mujer{
+        border-bottom: 0.5rem solid black;
+        background-color: #FFE6E6;
+        margin: 0;
+        padding: 0;
+        height: 60rem;
+    }
+    &-niños {
+        border-bottom: 0.5rem solid black;
+        background-color: #CDF0EA;
+        margin: 0;
+        padding: 0;
+        height: 60rem;
+    }
+}

@@ -2,6 +2,10 @@ html {
     font-size: 62.5%;
 }
 
+main {
+    box-sizing: content-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;  /* 1rem = 10px */
@@ -28,6 +32,7 @@ h3 {
 }
 
 header {
+    border-bottom: 0.5rem solid black;
     ul {
     list-style-type: none;
     background-color: black;
@@ -35,15 +40,12 @@ header {
     }
 }
 
-.nav-sitio {
-    a {
-    padding: 0 3rem;
-    font-size: 4rem;
-    color: white;
-    border-radius: 0.5rem;
-    }
-}
-
 @import "botones";
 
 @import "navsitio";
+
+@import "index";
+
+@import "footer";
+
+@import "index-responsive";

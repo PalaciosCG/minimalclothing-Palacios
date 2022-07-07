@@ -1,5 +1,10 @@
+@charset "UTF-8";
 html {
   font-size: 62.5%;
+}
+
+main {
+  box-sizing: content-box;
 }
 
 body {
@@ -27,17 +32,13 @@ h3 {
   white-space: nowrap;
 }
 
+header {
+  border-bottom: 0.5rem solid black;
+}
 header ul {
   list-style-type: none;
   background-color: black;
   justify-content: end;
-}
-
-.nav-sitio a {
-  padding: 0 3rem;
-  font-size: 4rem;
-  color: white;
-  border-radius: 0.5rem;
 }
 
 #boton-comprar {
@@ -81,11 +82,238 @@ header ul {
   border-radius: 0.5rem;
 }
 
-.nav-sitio li:hover {
-  background-color: white;
-  color: black;
-  transition-duration: 1s;
-  border-radius: 0.5rem;
+.seccion-sale {
+  border-bottom: 0.5rem solid black;
+  background-color: #c6c6c6;
+  margin: 0;
+  padding: 0;
+  height: 60rem;
+}
+.seccion-hombre {
+  border-bottom: 0.5rem solid black;
+  background-color: #BE8C63;
+  margin: 0;
+  padding: 0;
+  height: 60rem;
+}
+.seccion-mujer {
+  border-bottom: 0.5rem solid black;
+  background-color: #FFE6E6;
+  margin: 0;
+  padding: 0;
+  height: 60rem;
+}
+.seccion-niños {
+  border-bottom: 0.5rem solid black;
+  background-color: #CDF0EA;
+  margin: 0;
+  padding: 0;
+  height: 60rem;
+}
+
+footer h4 a {
+  color: white;
+  font-size: 2rem;
+}
+footer .caja-footer h4 {
+  font-size: 2rem;
+}
+footer .caja-footer p {
+  font-size: 1.3rem;
+  margin-bottom: 2px;
+  padding: 0;
+}
+
+.caja-home-bg {
+  border-bottom: 5px solid black;
+  background-color: black;
+}
+
+#boton-home a {
+  color: white;
+}
+
+.caja-footer {
+  background-color: #c6c6c6;
+}
+
+.caja-ubicacion p {
+  font-size: 1.5rem;
+}
+
+.caja-nosotros {
+  grid-area: caja-nosotros;
+  margin: 0rem;
+}
+
+.caja-dudas {
+  grid-area: caja-dudas;
+  margin: 0rem;
+}
+
+@media (max-width: 480px) {
+  /* FONT-SIZING */
+  h1 {
+    font-size: 3rem;
+    grid-area: logo;
+  }
+  h2 {
+    padding: 0.5rem 0;
+    grid-area: titulo;
+    font-size: 2.3rem;
+  }
+  h3 {
+    font-size: 2rem;
+    margin: 0;
+    justify-content: center;
+    text-align: center;
+  }
+  .nav-sitio {
+    padding: 1rem;
+    width: 100vw;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-sitio a {
+    font-size: 2rem;
+    padding: 1.5rem;
+  }
+  .nav-sitio-bg li {
+    font-size: 1.5rem;
+  }
+  .nav-sitio-bg li {
+    font-size: 1.5rem;
+  }
+  .seccion p {
+    grid-area: art-descripcion;
+    font-size: 1.5rem;
+  }
+  .contenedor-art {
+    grid-area: contenedor-art;
+  }
+  .seccion-sale {
+    padding: 0.2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 55% 40%;
+    grid-template-areas: "titulo" "imagen-art" "contenedor-art";
+  }
+  .seccion-hombre {
+    padding: 0.2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 55% 40%;
+    grid-template-areas: "titulo" "imagen-art" "contenedor-art";
+  }
+  .seccion-mujer {
+    padding: 0.2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 55% 40%;
+    grid-template-areas: "titulo" "imagen-art" "contenedor-art";
+  }
+  .seccion-niños {
+    padding: 0.2rem;
+    width: 100%;
+    margin: 0rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 55% 40%;
+    grid-template-areas: "titulo" "imagen-art" "contenedor-art";
+  }
+  footer .caja-footer h4 {
+    font-size: 1rem;
+    text-decoration: underline;
+  }
+  footer .caja-footer p {
+    font-size: 0.7rem;
+  }
+  footer .caja-ubicacion p {
+    font-size: 0.7rem;
+  }
+  .caja-home-bg {
+    margin: auto;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-around;
+    grid-area: caja-home;
+  }
+  .caja-cambios {
+    grid-area: caja-cambios;
+    margin: 0rem;
+  }
+  .caja-seguinos {
+    grid-area: caja-seguinos;
+    margin: 0rem;
+  }
+  .caja-ubicacion {
+    grid-area: caja-ubicacion;
+    margin: 0rem;
+  }
+  .caja-nosotros {
+    grid-area: caja-nosotros;
+    margin: 0rem;
+  }
+  .caja-dudas {
+    grid-area: caja-dudas;
+    margin: 0rem;
+  }
+  footer {
+    height: 100%;
+    grid-area: footer;
+  }
+  .caja-footer {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "caja-home caja-home caja-home caja-home caja-home" "caja-seguinos caja-ubicacion caja-cambios caja-nosotros caja-dudas";
+  }
+  .caja-iframe {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+  }
+  .caja-iframe iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  #boton-comprar {
+    width: 30rem;
+    margin: 0.5rem 0;
+    font-family: "Montserrat";
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    border: solid 0.3rem;
+  }
+  #boton-comprar a {
+    color: white;
+    font-size: 1.5rem;
+  }
+  #boton-comprar:hover {
+    color: black;
+    background-color: white;
+    border: solid 0.3rem;
+    transform: scale(1.15);
+    transition-duration: 2000ms;
+  }
+  #boton-comprar:hover a {
+    color: black;
+  }
+  .box-descripcion {
+    justify-content: center;
+  }
 }
 
 /*# sourceMappingURL=styles-scss.css.map */
