@@ -28,3 +28,26 @@
         height: 60rem;
     }
 }
+
+.contenedor-art {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    p {
+        margin: 0;
+    }
+    
+}
+
+.box-descripcion {
+    padding: 3rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 40rem;
+    height: 59.5rem;
+}
+
+.texto-seccion {
+    padding: 3rem 0;
+}

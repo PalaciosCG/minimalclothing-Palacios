@@ -29,6 +29,7 @@ h3 {
     padding: 1rem 0;
     font-size: 3.5rem;
     white-space: nowrap;
+    text-align: center;
 }
 
 header {
@@ -36,13 +37,14 @@ header {
     ul {
     list-style-type: none;
     background-color: black;
-    justify-content: end;
     }
 }
 
 @import "botones";
 
 @import "navsitio";
+
+@import "navuser";
 
 @import "index";
 

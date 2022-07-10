@@ -13,14 +13,14 @@
     <link rel="preload" href="./css/styles.css" as="style">
     <title>Minimal Clothing</title>
 </head>
-    <body class="container-fluid p-0 m-0 row">
+    <body class="container-fluid p-0 m-0">
         <div class="container-fluid d-flex justify-content-center encabezado">
         <a name="top"></a>
         <h1>MINIMAL</h1>
         </div>
         <header class="col-12 col-lg-12 p-0 m-0 sticky-top">
             <!-- Navegación del sitio -->
-            <nav id="navegacion">
+            <nav id="navegacion justify-content-sm-center">
                 <ul class="d-flex justify-content-center m-0 p-0 nav-sitio">
                     <li><a href="./pages/sale.html">SALE</a></li>
                     <li><a href="./pages/hombre.html">MEN</a></li>
@@ -29,7 +29,7 @@
                     <li><a href="./pages/talles.html">TALLES</a></li>
                 </ul>
             <!-- Panel de usuario -->
-                <ul class="d-flex justify-content-end align-items-center m-0 p-4 nav-user">
+                <ul class="d-flex align-items-center justify-content-center justify-content-sm-end m-0 p-4 nav-user">
                     <li><a href="./pages/registro.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <circle cx="9" cy="7" r="4" />
@@ -56,13 +56,13 @@
             </nav>
         </header>
     <!-- Main del sitio -->
-        <main id="contenedor-main m-0 p-0 row">
-            <section data-aos="fade-right" data-aos-duration="3000" class="seccion seccion-sale row seccion m-0 p-0">
+        <main id="contenedor-main row m-0 p-0">
+            <section data-aos="fade-right" data-aos-duration="3000" class="seccion seccion-sale row seccion m-0 p-4">
                 <h2 class="col m-0 p-0 d-flex justify-content-center align-items-center">APROVECHA EL SALE!</h2>
                 <article class="contenedor-art col d-flex justify-content-center align-items-center m-0 p-0">
                     <div class="box-descripcion row col-4">
-                        <h3 class="row">Buzos - 30% OFF!</h3>
-                        <p class="texto-seccion row m-0 p-0">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam libero ea, ratione quos expedita unde inventore aliquam similique? Pariatur?</p>
+                        <h3 class="row m-0 p-2">Buzos - 30% OFF!</h3>
+                        <p class="texto-seccion row">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat aperiam libero ea, ratione quos expedita unde inventore aliquam similique? Pariatur?</p>
                         <button class="row" id="boton-comprar"> <a href="./pages/sale.html">COMPRA AHORA!</a></button>
                     </div>
                 </article>
@@ -70,25 +70,25 @@
                     <img class="image-fluid" src="./img/sale.jpg" alt="">
                 </div>
             </section>
-            <section data-aos="fade-left" data-aos-duration="3000" class="seccion seccion-hombre seccion row m-0 p-0">
+            <section data-aos="fade-left" data-aos-duration="3000" class="seccion seccion-hombre seccion row m-0 p-4">
                 <div class="col d-flex justify-content-center align-items-center" data-aos="flip-left" data-aos-duration="3000">
                     <img class="imagen-art image-fluid" src="./img/saco.jpg" alt="">
                 </div>
                 <article class="contenedor-art col d-flex justify-content-center align-items-center m-0 p-0">
                     <div class="box-descripcion row col-4">
                         <h3>Sacos</h3>
-                        <p class="texto-seccion row m-0 p-0">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente beatae labore aspernatur cum architecto dolore pariatur accusamus maiores id officia!</p>
+                        <p class="texto-seccion row">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente beatae labore aspernatur cum architecto dolore pariatur accusamus maiores id officia!</p>
                         <button id="boton-comprar"> <a href="./pages/hombre.html">COMPRA AHORA!</a></button>
                     </div>
                 </article>
                 <h2 class="col d-flex justify-content-center align-items-center">AUTUNM MEN 2022</h2>
             </section>
-            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-mujer seccion row seccion m-0 p-0">
+            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-mujer seccion row seccion m-0 p-4">
                 <h2 class="col d-flex justify-content-center align-items-center">AUTUNM WOMAN - 2022</h2>
                 <article class="contenedor-art contenedor-art col d-flex justify-content-center align-items-center m-0 p-0">
                     <div class="box-descripcion row col-4">
                         <h3>Vestidos</h3>
-                        <p class="texto-seccion row m-0 p-0">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dolorum nostrum laboriosam impedit similique cum, voluptatem necessitatibus consequatur minima labore!</p>
+                        <p class="texto-seccion row">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magnam dolorum nostrum laboriosam impedit similique cum, voluptatem necessitatibus consequatur minima labore!</p>
                         <button id="boton-comprar"> <a href="./pages/mujer.html">COMPRA AHORA!</a></button>
                     </div>
                 </article>
@@ -96,7 +96,7 @@
                     <img class="imagen-art" src="./img/vestido.jpg" alt="">
                 </div>
             </section>
-            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-niños seccion row seccion m-0 p-0">
+            <section data-aos="fade-right" data-aos-duration="3000" class="seccion-niños seccion row seccion m-0 p-4">
                 <h2 class="col d-flex justify-content-center align-items-center">KIDS - 2022</h2>
                 <article class="contenedor-art contenedor-art col d-flex justify-content-center align-items-center m-0 p-0">
                     <div class="box-descripcion row col-4">

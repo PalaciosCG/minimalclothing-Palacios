@@ -30,6 +30,7 @@ h3 {
   padding: 1rem 0;
   font-size: 3.5rem;
   white-space: nowrap;
+  text-align: center;
 }
 
 header {
@@ -38,7 +39,6 @@ header {
 header ul {
   list-style-type: none;
   background-color: black;
-  justify-content: end;
 }
 
 #boton-comprar {
@@ -82,6 +82,16 @@ header ul {
   border-radius: 0.5rem;
 }
 
+.nav-user {
+  background-color: white;
+  height: 3rem;
+  border-bottom: solid black 0.3rem;
+}
+.nav-user a {
+  display: flex;
+  padding: 0 1rem;
+}
+
 .seccion-sale {
   border-bottom: 0.5rem solid black;
   background-color: #c6c6c6;
@@ -109,6 +119,28 @@ header ul {
   margin: 0;
   padding: 0;
   height: 60rem;
+}
+
+.contenedor-art {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contenedor-art p {
+  margin: 0;
+}
+
+.box-descripcion {
+  padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 40rem;
+  height: 59.5rem;
+}
+
+.texto-seccion {
+  padding: 3rem 0;
 }
 
 footer h4 a {
@@ -158,9 +190,9 @@ footer .caja-footer p {
     grid-area: logo;
   }
   h2 {
-    padding: 0.5rem 0;
+    padding: 0;
     grid-area: titulo;
-    font-size: 2.3rem;
+    font-size: 3rem;
   }
   h3 {
     font-size: 2rem;
@@ -179,9 +211,6 @@ footer .caja-footer p {
   .nav-sitio a {
     font-size: 2rem;
     padding: 1.5rem;
-  }
-  .nav-sitio-bg li {
-    font-size: 1.5rem;
   }
   .nav-sitio-bg li {
     font-size: 1.5rem;
@@ -226,6 +255,11 @@ footer .caja-footer p {
     grid-template-rows: 5% 55% 40%;
     grid-template-areas: "titulo" "imagen-art" "contenedor-art";
   }
+  footer {
+    display: flex;
+    flex-direction: column;
+    grid-area: footer;
+  }
   footer .caja-footer h4 {
     font-size: 1rem;
     text-decoration: underline;
@@ -233,7 +267,7 @@ footer .caja-footer p {
   footer .caja-footer p {
     font-size: 0.7rem;
   }
-  footer .caja-ubicacion p {
+  footer .caja-uibicacion p {
     font-size: 0.7rem;
   }
   .caja-home-bg {
@@ -262,10 +296,6 @@ footer .caja-footer p {
   .caja-dudas {
     grid-area: caja-dudas;
     margin: 0rem;
-  }
-  footer {
-    height: 100%;
-    grid-area: footer;
   }
   .caja-footer {
     width: 100vw;
@@ -312,7 +342,10 @@ footer .caja-footer p {
     color: black;
   }
   .box-descripcion {
+    padding: 1rem 0;
     justify-content: center;
+    align-items: center;
+    height: auto;
   }
 }
 

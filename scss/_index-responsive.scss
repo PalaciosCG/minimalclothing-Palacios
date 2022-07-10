@@ -9,9 +9,9 @@
     }
 
     h2 {
-        padding: 0.5rem 0;
+        padding: 0;
         grid-area: titulo;
-        font-size: 2.3rem;
+        font-size: 3rem;
     }
 
     h3 {
@@ -39,9 +39,6 @@
         }
     }
 
-    .nav-sitio-bg li {
-        font-size: 1.5rem;
-    }
     .seccion p {
         grid-area: art-descripcion;
         font-size: 1.5rem;
@@ -50,121 +47,122 @@
     .contenedor-art {
         grid-area: contenedor-art;
     }
-    .seccion-sale {
-        padding: 0.2rem;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5% 55% 40%;
-        grid-template-areas:
-        "titulo"
-        "imagen-art"
-        "contenedor-art";
+    .seccion {
+        &-sale {
+            padding: 0.2rem;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 5% 55% 40%;
+            grid-template-areas:
+            "titulo"
+            "imagen-art"
+            "contenedor-art";
+        }
+        &-hombre {
+            padding: 0.2rem;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 5% 55% 40%;
+            grid-template-areas:
+            "titulo"
+            "imagen-art"
+            "contenedor-art";
+        }
+        &-mujer {
+            padding: 0.2rem;
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 5% 55% 40%;
+            grid-template-areas:
+            "titulo"
+            "imagen-art"
+            "contenedor-art";
+        }
+        &-niños {
+            padding: 0.2rem;
+            width: 100%;
+            margin: 0rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 5% 55% 40%;
+            grid-template-areas:
+            "titulo"
+            "imagen-art"
+            "contenedor-art";
+        }
     }
 
-    .seccion-hombre {
-        padding: 0.2rem;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5% 55% 40%;
-        grid-template-areas:
-        "titulo"
-        "imagen-art"
-        "contenedor-art";
+    footer {
+        display: flex;
+        flex-direction: column;
+        grid-area: footer;
+
+        .caja-footer {
+            h4 {
+            font-size: 1rem;
+            text-decoration: underline;
+            }
+            p {
+                font-size: 0.7rem;
+            }
+        }
+        .caja-uibicacion {
+            p {
+                font-size: 0.7rem;
+            }
+        }
     }
 
-    .seccion-mujer {
-        padding: 0.2rem;
-        width: 100%;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5% 55% 40%;
-        grid-template-areas:
-        "titulo"
-        "imagen-art"
-        "contenedor-art";
-    }
-
-    .seccion-niños {
-        padding: 0.2rem;
-        width: 100%;
-        margin: 0rem;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 5% 55% 40%;
-        grid-template-areas:
-        "titulo"
-        "imagen-art"
-        "contenedor-art";
-    }
-    footer .caja-footer h4 {
-        font-size: 1rem;
-        text-decoration: underline;
-    }
-
-    footer .caja-footer p {
-        font-size: 0.7rem;
-    }
-
-    footer .caja-ubicacion p {
-        font-size: 0.7rem;
-    }
-
-    .caja-home-bg {
+    .caja {
+        &-home-bg {
         margin: auto;
         width: 100vw;
         align-items: center;
         justify-content: space-around;
         grid-area: caja-home;
+        }
+        &-cambios {
+            grid-area: caja-cambios;
+            margin: 0rem;
+        }
+        &-seguinos {
+            grid-area: caja-seguinos;
+            margin: 0rem;
+        }
+        &-ubicacion {
+            grid-area: caja-ubicacion;
+            margin: 0rem;
+        }
+        &-nosotros {
+            grid-area: caja-nosotros;
+            margin: 0rem;
+        }
+        &-dudas {
+            grid-area: caja-dudas;
+            margin: 0rem;
+        }
+        &-footer {
+            width: 100vw;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            grid-template-rows: 20% 80%;
+            grid-template-areas: 
+            "caja-home caja-home caja-home caja-home caja-home"
+            "caja-seguinos caja-ubicacion caja-cambios caja-nosotros caja-dudas";
+        }
+        &-iframe {
+            overflow: hidden;
+            padding-bottom: 56.25%;
+            position: relative;
+            height: 0;
+    
+        }
     }
 
-    .caja-cambios {
-        grid-area: caja-cambios;
-        margin: 0rem;
-    }
 
-    .caja-seguinos {
-        grid-area: caja-seguinos;
-        margin: 0rem;
-    }
-
-    .caja-ubicacion {
-        grid-area: caja-ubicacion;
-        margin: 0rem;
-    }
-
-    .caja-nosotros {
-        grid-area: caja-nosotros;
-        margin: 0rem;
-    }
-
-    .caja-dudas {
-        grid-area: caja-dudas;
-        margin: 0rem;
-    }
-
-    footer {
-        height: 100%;
-        grid-area: footer;
-    }
-    .caja-footer {
-        width: 100vw;
-        display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: 20% 80%;
-        grid-template-areas: 
-        "caja-home caja-home caja-home caja-home caja-home"
-        "caja-seguinos caja-ubicacion caja-cambios caja-nosotros caja-dudas";
-    }
-
-    .caja-iframe {
-        overflow: hidden;
-        padding-bottom: 56.25%;
-        position: relative;
-        height: 0;
-
-    }
 
     .caja-iframe iframe {
         position: absolute;
@@ -183,26 +181,25 @@
         background-color: black;
         border-radius: 0.5rem;
         border: solid 0.3rem;
+        a {
+            color: white;
+            font-size: 1.5rem;
+        }
+        &:hover {
+            color: black;
+            background-color: white;
+            border: solid 0.3rem;
+            transform: scale(1.15);
+            transition-duration: 2000ms;
+            a {
+                color: black;
+            }
+        }
     }
-    
-    #boton-comprar a {
-        color: white;
-        font-size: 1.5rem;
-    }
-    
-    #boton-comprar:hover {
-        color: black;
-        background-color: white;
-        border: solid 0.3rem;
-        transform: scale(1.15);
-        transition-duration: 2000ms;
-    }
-    
-    #boton-comprar:hover a {
-        color: black;
-    }
-
     .box-descripcion {
+        padding: 1rem 0;
         justify-content: center;
+        align-items: center;
+        height: auto;
     }
 }
