@@ -20,3 +20,43 @@
         }
     }
 }
+
+#navbarSupportedContent {
+    background-color: black;
+    justify-content: center;
+}
+
+#navegacion {
+    display: flex;
+    justify-content: center;
+    background-color: black;
+}
+
+.nav-item {
+    a {
+        margin: 0rem 5rem;
+        padding: 0 3rem;
+        font-size: 4rem;
+        color: white;
+        border-radius: 0.5rem;
+        }
+        li {
+            a{
+                &:hover {
+                    color: black;
+                    transition-duration: 1s;
+                }
+            }
+            &:hover {
+                background-color: white;
+                color: black;
+                transition-duration: 1s;
+                border-radius: 0.5rem;
+            }
+        }
+}
+
+.navbar-toggler-icon {
+    width: 4rem;
+    height: 4rem;
+}

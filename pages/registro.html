@@ -7,58 +7,74 @@
     <meta name="description" content="Registrate para obtener nuestras mejores ofertas y no perderte de nada con nuestro newsletter">
     <meta name="owner" content="Cristian Palacios">
     <meta name="author" content="Cristian Palacios">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&family=Montserrat:wght@600&family=Mukta:wght@300;500&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="preload" href="../css/styles.css" as="style">
+    <link href="https://fonts.googleapis.com/css2?family=Krub:wght@500&family=Montserrat:wght@600&family=Mukta:wght@300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/bootstrap.min.css"> 
+    <link rel="stylesheet" href="../css/styles-scss.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preload" href="../css/styles-scss.css" as="style">
+    <link rel="icon" type="image/x-icon" href="/img/favicon.png">
     <title>Minimal Clothing | REGISTRO</title>
 </head>
 <body>
-    <div class="encabezado">
+    <div class="container-fluid d-flex justify-content-center encabezado">
         <a name="top"></a>
         <h1>MINIMAL</h1>
     </div>
-    <header>
-        <nav id="navegacion">
-            <!-- Navegación del sitio -->
-            <div class="nav-sitio-bg">
-                <ul class="nav-sitio">
-                    <li><a href="../pages/sale.html">SALE</a></li>
-                    <li><a href="../pages/hombre.html">MEN</a></li>
-                    <li><a href="../pages/mujer.html">WOMEN</a></li>
-                    <li><a href="../pages/niño.html">KIDS</a></li>
-                    <li><a href="../pages/talles.html">TALLES</a></li>
+    <header class="col-12 col-lg-12 p-0 m-0 sticky-top">
+        <!-- Navegación del sitio -->
+        <nav id="navegacion" class="navbar-dark navbar-expand-lg">
+            <div class="container d-flex justify-content-center m-0 p-0">
+              <a class="navbar-brand justify-content-center" href="#"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav nav-sitio">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./sale.html">SALE</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./hombre.html">MEN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./mujer.html">WOMEN</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./niño.html">KIDS</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="./talles.html">TALLES</a>
+                  </li>
                 </ul>
+              </div>
             </div>
-            <!-- Panel de usuario -->
-            <div class="nav-user-bg">
-                <ul class="nav-user">
-                    <li><a href="../pages/registro.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="9" cy="7" r="4" />
-                        <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                        <path d="M16 11h6m-3 -3v6" />
-                        </svg></a></li>
-                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="7" r="4" />
-                        <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
-                        </svg></a></li>
-                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
-                        </svg></a></li>
-                    <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="6" cy="19" r="2" />
-                        <circle cx="17" cy="19" r="2" />
-                        <path d="M17 17h-11v-14h-2" />
-                        <path d="M6 5l14 1l-1 7h-13" />
-                        </svg></a></li>
-                </ul>
-            </div>
-            <hr>
+          </nav>
+        <!-- Panel de usuario -->
+            <ul class="d-flex align-items-center justify-content-center justify-content-sm-end m-0 p-4 nav-user">
+                <li><a href="./pages/registro.html"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-plus" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="9" cy="7" r="4" />
+                    <path d="M3 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    <path d="M16 11h6m-3 -3v6" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="12" cy="7" r="4" />
+                    <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-heart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <path d="M19.5 13.572l-7.5 7.428l-7.5 -7.428m0 0a5 5 0 1 1 7.5 -6.566a5 5 0 1 1 7.5 6.572" />
+                    </svg></a></li>
+                <li><a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="20" height="20" viewBox="0 0 24 24" stroke-width="1.5" stroke="#000000" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                    <circle cx="6" cy="19" r="2" />
+                    <circle cx="17" cy="19" r="2" />
+                    <path d="M17 17h-11v-14h-2" />
+                    <path d="M6 5l14 1l-1 7h-13" />
+                    </svg></a></li>
+            </ul>
         </nav>
     </header>
     <main id="main-formulario">

@@ -1,0 +1,108 @@
+    /* ESTILIZADO DE ARTICULOS/PRODUCTOS */
+
+    #productos {
+        background-image: linear-gradient(rgba(255,255,255,0.7), rgba(255,255,255,0.7)), url("../img/salebackground.png");
+        h2 {
+            background-color: gray;
+            text-align: center;
+        }
+        &-hombre {
+        background-color: rgba(190, 140, 99, 0.6);
+        background-size: cover;
+        }
+        &-mujer {
+            background-color: rgba(255,230,230, 0.6);
+        }
+        &-niño {
+            background-color: rgba(205,240,234, 0.6);
+        }
+        &-talles {
+            background-color: rgba(255,230,230, 0.6);
+        }
+    }
+
+    article {
+        h3 {
+        text-align: center;
+        }
+    }
+
+    .item-producto {
+        background-color: white;
+        width: 25rem;
+        margin: 5rem auto;
+        border: solid 0.3rem; 
+        border-radius: 0.6rem;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        p {
+            margin: 1rem;
+            padding: 1rem;
+            }
+            a {
+                text-decoration: none;
+                text-align: center;
+                color: var(--blanco);
+                background-color: var(--secundario);
+                border-radius: 0.5rem;
+                border: solid;
+                padding: 1rem;
+                &:hover {
+                    background-color: var(--blanco);
+                    color: var(--secundario);
+                    border: solid;
+                }
+            }
+        &1 {
+            grid-area: item-producto1;
+        }
+        &2 {
+            grid-area: item-producto2;
+        }
+        &3 {
+            grid-area: item-producto3;
+        }
+        &4 {
+            grid-area: item-producto4;
+        }
+        &5 {
+            grid-area: item-producto5;
+        }
+        &6 {
+            grid-area: item-producto6;
+        }
+        &7 {
+            grid-area: item-producto7;
+        }
+        &8 {
+            grid-area: item-producto8;
+        }
+        &9 {
+            grid-area: item-producto9;
+        }
+        &10 {
+            grid-area: item-producto10;
+        }
+        &11 {
+            grid-area: item-producto11;
+        }
+        &12 {
+            grid-area: item-producto12;
+        }
+    }
+    .contenedor-productos {
+        margin: 0;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-template-areas: 
+        "item-producto1 item-producto2 item-producto3 item-producto4"
+        "item-producto5 item-producto6 item-producto7 item-producto8"
+        "item-producto9 item-producto10 item-producto11 item-producto12";
+        align-items: center;
+        justify-content: center;
+    
+    }
