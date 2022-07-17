@@ -1,45 +1,4 @@
-html {
-    font-size: 62.5%;
-}
-
-main {
-    box-sizing: content-box;
-}
-
-body {
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;  /* 1rem = 10px */
-}
-
-a:link, a:visited, a:hover, a:active {
-    text-decoration: none;
-    color: black;
-}
-
-h1 {
-    font-size: 5.5rem;
-}
-
-h2 {
-    font-size: 4.5rem;
-    text-align: center;
-}
-
-h3 {
-    margin: 1rem 1rem;
-    padding: 1rem 0;
-    font-size: 3.5rem;
-    white-space: nowrap;
-    text-align: center;
-}
-
-header {
-    border-bottom: 0.5rem solid black;
-    ul {
-    list-style-type: none;
-    background-color: black;
-    }
-}
+@import "global";
 
 @import "botones";
 
