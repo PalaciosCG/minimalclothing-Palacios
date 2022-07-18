@@ -106,7 +106,7 @@ header ul {
   transition-duration: 1s;
 }
 .nav-item li:hover {
-  background-color: white;
+  background-color: #ffffff;
   color: black;
   transition-duration: 1s;
   border-radius: 0.5rem;
@@ -115,6 +115,7 @@ header ul {
 .navbar-toggler-icon {
   width: 4rem;
   height: 4rem;
+  color: #ffffff;
 }
 
 .nav-user {
@@ -189,6 +190,10 @@ footer .caja-footer p {
   font-size: 1.3rem;
   margin-bottom: 2px;
   padding: 0;
+}
+footer iframe {
+  width: 230px;
+  height: 150px;
 }
 
 .caja-home-bg {
